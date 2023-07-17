@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "robust-catalyst-392806",
+  "private_key_id": "30f63af9d16db4298841b7df960550c6d6aec3d5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCUmI8WuBOa3aLF\nMDaHcpxLMKDMHhkq92ItrlMCX4SRtrTNrsa1iy2FxcYOLyQMmax7gUVBBlgXbQuG\nB0fBXq/A28ZwJZOz7TznRmi2Q3Tuhh4t6EtwcRcmRjesA/y7zojm2rpJyxoj9QVu\norOJMjo3Bos8RPxB/Q6gOsm6Junx2ZeFeTi6zoNrdkkQdyGxEVGP/EhoxDw/v4qd\nS1kItHSd8tkHxL523rUXPrqKQjZjDC/TJ/AoJfTmU3hUzlWcNzP0340QFVlcDip0\nJUW/RkXuzvhtmPBsb5LqtXYnxLjzHPxTyKiXVUDjdYeyQS42zqviOR/tub68T/48\n5ADiC3LdAgMBAAECggEAAMvW6U43/qzXbzH+1fMvPG6fhodWnfjuUJIivoV5uTQF\nwMmvt/j21+BFm0/Hkewkvjdk7+3ezy/lyvIsZfBB/MSJ3FsNelCYFyGZa2abosMk\nAVSc77shsPI0vBfFO+RBQJ4AyecVUXRdV40tSJvinTAVd7QsgEy8Tl0jbISLgbxJ\n1t0RrUTuX0inXthCy4VfGjbClyz6m82L7bxi/HdqSZvxP9E4Oo6MXCJqj3SYyl0y\ndWsx9naFCbBcL/wkIxkHgldXl01//e89AvtjLydmZUxuG6isxTWz4LRVKNZmAEpJ\ngeFejGNDQmuWIc4sQcvYE/vnC4zxX4CZl3LFJxYlaQKBgQDPtV9ZMY8LgmtubqnY\n6PZ22RTmOoTyl5d+74meSpa2v0JftiPhWccZbyWRa7qarYNFT0gu2tE4fynbnfvw\nvD6d3RDRmGd81Fy4r5Wc2WpFbrkvWnIrK8jR/nttgJDE9TyE90pPPMGs7Fi5iLfG\nIvYsnYLM1uORYuyo9p2PnQ8vWQKBgQC3JNvoMYKWSty2Sd1gRI9ZIRHbz1Np5AcF\nWsnSEp5tvj0WOTRRNZ+R/qUV8nE/UGy+2TVC+F3E+PrJogp2TNt6xdQKbfQzbgmI\nhJAp2BPjdP24I6+BNB9PFp04qtuNbvGqqGw6jKzGyC4Uj6GSzAvTQHTnauK6wgqd\nvwVpfEYTJQKBgFwH8v1kNgtVeCBwLBWN81ZpjRcNqsaKYHe/zuwyBGFokRIzc+Zv\njwY39x9d6kqKwvU80bDhB37O6U8DyxO5dM0hnEgiDQiEV6kFM3dR5gJpsufGXXu/\nZLWW2j2Ej6CVQIFxyJ0fQHlMJ2vdpf/GkejmyYPVWvOaL14WF24Amy/RAoGAA6Nx\n0v0Y0Q+PrvdstHroNicYCbvmtlXXZd3V4JyKFTgQUp60UWC1WNssQHFemplob6o1\nCq2Qf1dK9DKJ7qu8OIYxnjts/JCVE+c+TfaC/qPWXpAm7nQwowuZ+AQ89GRd3LwX\n2lntHM3hTHtGBHqVSY8gQ3C2LGuqdlPTMbNMWRkCgYAOuYgFOuB5ubcDfg45dld8\nS17u37EaFZUxCCw9kjIJ1NUljOWCHCQM35YQIL6vnhCAt6wKcv+4/GsQJnaa0BcX\nRmmx7/ktVnHKkZ7hgxVolI9esOkCONL5kHBbGmzXOZlBjF2MFD2ahdEhjqpP26mV\nW4FfCyhBR/BXg8bwAGuQcQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "japaportal@robust-catalyst-392806.iam.gserviceaccount.com",
+  "client_id": "108206445734956054264",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/japaportal%40robust-catalyst-392806.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
