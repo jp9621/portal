@@ -1,4 +1,4 @@
-//g++ main.cpp getPrice.cpp track.cpp -o output -I. -lcurl -pthread
+//g++ main.cpp price.cpp track.cpp csvcompile.cpp -o output -I. -lcurl -pthread
 
 
 #include <string>
@@ -17,6 +17,7 @@ void csv(std::string currencyPair, std::string session, std::string biastf, std:
 
 int main()
 {
+    
     std::remove("log.csv");
     std::string currencyPair;
     std::cout << "Pair: ";
@@ -78,25 +79,25 @@ int main()
         std::string rs = "";
         std::string comments;
 
-        std::cout << "Session: ";
+        std::cout << "Session: \n";
         std::cin >> session;
 
-        std::cout << "Bias TF: ";
+        std::cout << "Bias TF: \n";
         std::cin >> biastf;
 
-        std::cout << "Entry TF: ";
+        std::cout << "Entry TF: \n";
         std::cin >> entrytf;
 
-        std::cout << "Confirmation TF: ";
+        std::cout << "Confirmation TF: \n";
         std::cin >> conftf;
 
-        std::cout << "Confirmation Type: ";
+        std::cout << "Confirmation Type: \n";
         std::cin >> conftype;
 
-        std::cout << "Setup Type: ";
+        std::cout << "Setup Type: \n";
         std::cin >> setuptype;
 
-        std::cout << "Comments: ";
+        std::cout << "Comments: \n";
         std::cin >> comments;
 
         if (stoploss < currentprice) {
