@@ -14,12 +14,12 @@ std::vector<bool> track(const std::string& currencyName, const std::vector<float
     // Check if targets are met
     for (size_t i = 0; i < targets.size(); i++)
     {
-        if ((price >= targets[i] && stoploss < price) || (price <= targets[i] && stoploss > price))
+        if (((price >= targets[i]) && (stoploss < price)) || ((price <= targets[i]) && (stoploss > price)))
         {
             targetsMet[i] = true;
             std::cout << "Target " << targets[i] << " met\n";
         }
-        if ((price < stoploss && stoploss < initialprice) || (price > stoploss && stoploss > initialprice)) {
+        if (((price < stoploss) && (stoploss < initialprice)) || ((price > stoploss) && (stoploss > initialprice))) {
             std::cout << "Stopped Out\n";
         }
 
