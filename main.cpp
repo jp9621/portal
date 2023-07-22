@@ -21,6 +21,9 @@ int main()
         std::string entrycheck;
         std::cout << "Type enter to place a trade: \n";
         std::cin >> entrycheck;
+        if (entrycheck == "exit") {
+            return 0;
+        }
         if (entrycheck == "enter") {
 
             std::remove("log.csv");
@@ -65,46 +68,14 @@ int main()
                     break;
                 }
             }
+            
 
             std::string log = "n";
             std::cout << "Log trade? [y/n]: ";
             std::cin >> log;
             if (log == "y") {
+
                 float maxprice;
-                std::string session;
-                std::string biastf;
-                std::string entrytf;
-                std::string conftf;
-                std::string conftype;
-                float maxrr;
-                std::string setuptype;
-                std::string be = "";
-                std::string tp1 = "";
-                std::string tp2 = "";
-                std::string rs = "";
-                std::string comments;
-
-                std::cout << "Session: \n";
-                std::cin >> session;
-
-                std::cout << "Bias TF: \n";
-                std::cin >> biastf;
-
-                std::cout << "Entry TF: \n";
-                std::cin >> entrytf;
-
-                std::cout << "Confirmation TF: \n";
-                std::cin >> conftf;
-
-                std::cout << "Confirmation Type: \n";
-                std::cin >> conftype;
-
-                std::cout << "Setup Type: \n";
-                std::cin >> setuptype;
-
-                std::cout << "Comments: \n";
-                std::cin >> comments;
-
                 if (stoploss < currentprice) {
                     auto maxelement = std::max_element(rrlist.begin(), rrlist.end());
                     maxprice = *maxelement;
@@ -114,8 +85,42 @@ int main()
                     maxprice = *minelement;
                 }
 
-                maxrr = std::abs((maxprice - currentprice) / (currentprice - stoploss));
-                int i = 0;
+                float maxrr = std::abs((maxprice - currentprice) / (currentprice - stoploss));
+
+                std::string session;
+                std::string biastf;
+                std::string entrytf;
+                std::string conftf;
+                std::string conftype;
+                std::string setuptype;
+                std::string be;
+                std::string tp1;
+                std::string tp2;
+                std::string rs;
+                std::string comments;
+
+                std::cout << "Session: ";
+                std::getline(std::cin, session);
+
+                std::cout << "Bias TF: ";
+                std::getline(std::cin, biastf);
+
+                std::cout << "Entry TF: ";
+                std::getline(std::cin, entrytf);
+
+                std::cout << "Confirmation TF: ";
+                std::getline(std::cin, conftf);
+
+                std::cout << "Confirmation Type: ";
+                std::getline(std::cin, conftype);
+
+                std::cout << "Setup Type: ";
+                std::getline(std::cin, setuptype);
+
+                std::cout << "Comments: ";
+                std::getline(std::cin, comments);
+
+
                 if (targetsMet[3]) {
                     rs = "W";
                 }
