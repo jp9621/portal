@@ -58,15 +58,20 @@ int main()
 
             std::vector<float> rrlist;
             std::vector<bool> targetsMet;
-
+            int loopiterations = 0;
             while (true)
             {
                 rrlist.push_back(getPriceForCurrencyPair(currencyPair));
                 targetsMet = track(currencyPair, targets, stoploss, currentprice);
                 std::this_thread::sleep_for(std::chrono::seconds(3));
-                if ((targetsMet[targets.size() - 1]) || (getPriceForCurrencyPair(currencyPair) < stoploss < currentprice) || (getPriceForCurrencyPair(currencyPair) > stoploss > currentprice)) {
+                if (targetsMet[targets.size() - 1] ||
+                    (getPriceForCurrencyPair(currencyPair) < stoploss && getPriceForCurrencyPair(currencyPair) < currentprice) ||
+                    (getPriceForCurrencyPair(currencyPair) > stoploss && getPriceForCurrencyPair(currencyPair) > currentprice)) {
                     break;
                 }
+                loopiterations++;
+                std::cout << "waiting" << "(" << loopiterations << ")";
+                std::cout.flush();
             }
             
 
@@ -99,25 +104,25 @@ int main()
                 std::string rs;
                 std::string comments;
 
-                std::cout << "Session: ";
+                std::cout << "Session: " << std::flush;
                 std::getline(std::cin, session);
 
-                std::cout << "Bias TF: ";
+                std::cout << "Bias TF: " << std::flush;
                 std::getline(std::cin, biastf);
 
-                std::cout << "Entry TF: ";
+                std::cout << "Entry TF: " << std::flush;
                 std::getline(std::cin, entrytf);
 
-                std::cout << "Confirmation TF: ";
+                std::cout << "Confirmation TF: " << std::flush;
                 std::getline(std::cin, conftf);
 
-                std::cout << "Confirmation Type: ";
+                std::cout << "Confirmation Type: " << std::flush;
                 std::getline(std::cin, conftype);
 
-                std::cout << "Setup Type: ";
+                std::cout << "Setup Type: " << std::flush;
                 std::getline(std::cin, setuptype);
 
-                std::cout << "Comments: ";
+                std::cout << "Comments: " << std::flush;
                 std::getline(std::cin, comments);
 
 
